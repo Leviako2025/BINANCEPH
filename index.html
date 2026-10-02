@@ -1,14 +1,135 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BINANCEPH | Philippines' Leading Crypto Exchange</title>
-    <meta name="description" content="Trade Bitcoin, Ethereum, and other cryptocurrencies on BINANCEPH. The most secure and trusted crypto platform in the Philippines." />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050814" />
+  <title>Crystal Coins — Crypto Portfolio</title>
+  <link rel="icon" href="assets/crystal-coins.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
 
+  <header class="nav">
+    <a class="brand" href="#">
+      <img src="assets/crystal-coins.png" alt="Crystal Coins logo" />
+      <span>Crystal<span>Coins</span></span>
+    </a>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#markets">Markets</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="connect-btn" id="connectBtn">Connect Wallet</button>
+  </header>
+
+  <main>
+    <section class="hero" id="dashboard">
+      <div class="hero-copy">
+        <div class="eyebrow">◆ CRYSTAL COINS</div>
+        <h1>Your crypto.<br><span>Crystal clear.</span></h1>
+        <p>Track your digital assets, portfolio performance and market moves from one beautiful dashboard.</p>
+        <div class="hero-actions">
+          <button class="primary" id="heroConnect">Connect Wallet</button>
+          <a class="secondary" href="#markets">Explore Markets <span>↓</span></a>
+        </div>
+        <div class="trust">
+          <span>●</span> Demo mode enabled
+          <span class="dot"></span>
+          ConnectKit-ready
+        </div>
+      </div>
+
+      <div class="coin-stage">
+        <div class="ring ring-1"></div>
+        <div class="ring ring-2"></div>
+        <img src="assets/crystal-coins.png" class="hero-logo" alt="Crystal Coins" />
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+      </div>
+    </section>
+
+    <section class="stats" id="markets">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">LIVE MARKET UI</span>
+          <h2>Market overview</h2>
+        </div>
+        <span class="demo-pill">DEMO DATA</span>
+      </div>
+
+      <div class="market-grid">
+        <article class="card market-card">
+          <div class="coin-title"><span class="coin-icon btc">₿</span><div><b>Bitcoin</b><small>BTC</small></div></div>
+          <strong>$67,842.18</strong>
+          <span class="positive">+2.84%</span>
+          <div class="spark"><i style="height:32%"></i><i style="height:44%"></i><i style="height:39%"></i><i style="height:58%"></i><i style="height:52%"></i><i style="height:74%"></i><i style="height:69%"></i><i style="height:86%"></i></div>
+        </article>
+
+        <article class="card market-card">
+          <div class="coin-title"><span class="coin-icon eth">◆</span><div><b>Ethereum</b><small>ETH</small></div></div>
+          <strong>$3,921.44</strong>
+          <span class="positive">+1.67%</span>
+          <div class="spark"><i style="height:60%"></i><i style="height:48%"></i><i style="height:67%"></i><i style="height:57%"></i><i style="height:76%"></i><i style="height:71%"></i><i style="height:82%"></i><i style="height:90%"></i></div>
+        </article>
+
+        <article class="card market-card">
+          <div class="coin-title"><span class="coin-icon sol">S</span><div><b>Solana</b><small>SOL</small></div></div>
+          <strong>$184.72</strong>
+          <span class="negative">-0.42%</span>
+          <div class="spark"><i style="height:82%"></i><i style="height:71%"></i><i style="height:77%"></i><i style="height:60%"></i><i style="height:69%"></i><i style="height:52%"></i><i style="height:57%"></i><i style="height:49%"></i></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="portfolio card">
+      <div>
+        <span class="eyebrow">PORTFOLIO</span>
+        <h2>Everything in one place.</h2>
+        <p>Connect a wallet or exchange to replace this demo dashboard with your real portfolio.</p>
+      </div>
+      <div class="portfolio-value">
+        <small>Total balance</small>
+        <strong>$24,860.42</strong>
+        <span class="positive">+$1,284.31 (5.44%)</span>
+      </div>
+      <div class="allocation">
+        <div><span><i class="legend btc"></i> Bitcoin</span><b>52%</b></div>
+        <div><span><i class="legend eth"></i> Ethereum</span><b>28%</b></div>
+        <div><span><i class="legend sol"></i> Solana</span><b>12%</b></div>
+        <div><span><i class="legend other"></i> Other</span><b>8%</b></div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="section-heading">
+        <div><span class="eyebrow">BUILT FOR CRYPTO</span><h2>Simple. Fast. Clear.</h2></div>
+      </div>
+      <div class="feature-grid">
+        <div class="feature card"><span>◈</span><h3>Portfolio tracking</h3><p>Bring wallets and exchanges together in one view.</p></div>
+        <div class="feature card"><span>✦</span><h3>Market data</h3><p>Prepare the UI for live CoinStats prices, charts and market data.</p></div>
+        <div class="feature card"><span>⌁</span><h3>Secure connections</h3><p>Use ConnectKit so connection credentials stay out of your frontend.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand small"><img src="assets/crystal-coins.png" alt="" /><span>Crystal<span>Coins</span></span></div>
+    <span>Temporary demo website • 2026</span>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close" id="closeModal">×</button>
+      <img src="assets/crystal-coins.png" alt="" />
+      <h3>Connect Crystal Coins</h3>
+      <p>This temporary site is ready for CoinStats ConnectKit. Add your public ConnectKit ID in <code>script.js</code> to enable the real connection popup.</p>
+      <button class="primary full" id="demoConnect">Continue</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
